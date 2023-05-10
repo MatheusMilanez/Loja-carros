@@ -1,0 +1,208 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/*Fim Imports*/
+
+/*Codigo Padrão*/
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html,body{
+        height: 100%;
+    }
+
+    .container{
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .clear{
+        clear: both;
+    }
+/*Fim Codigo Padrão*/
+
+
+/*header*/
+
+header{
+    padding: 20px 2% 35px 2%;
+    height: 130px;
+}
+
+.logo{
+    float: left;
+}
+
+.desktop{
+    float: right;
+    position: relative;
+    top: 40px;
+}
+
+.desktop ul{
+    list-style-type: none;
+}
+
+.desktop ul li {
+    float: left;
+    font-size: 23px;
+    padding: 0 20px;
+    font-style: italic;
+}
+
+.desktop a {
+    color: #000000;
+    text-decoration: none;
+}
+/*fim-header*/
+
+/*Section-banner*/
+.banner{
+    width: 100%;
+    height: calc(100% -130px);
+    min-height: 600px;
+    max-height: 800px;
+    background-color:#000000;
+    background-image: url(/img/bg.jpg);
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+.text-banner{
+    padding: 100px;
+}
+
+.text-banner-single{
+    width: 314px;
+    height: 50px;
+    color: #fff;
+    padding: 12px 30px;
+    margin-top: 20px;
+    font-size: 23px;
+    font-style: italic;
+    text-transform: uppercase;
+    background-image: url(/img/box-text.png);
+    background-size: 100% 100%;
+}
+
+.text-banner .text-banner-single:nth-last-of-type(2){
+    width: 180px;
+    position: relative;
+    left: -20px;
+}
+
+.text-banner .text-banner-single:nth-last-of-type(3){
+    width: 240px;
+    position: relative;
+    left: -10px;
+}
+
+
+
+.text-banner .text-banner-single:nth-last-of-type(1){
+    width: 370px;
+    height: 50px;
+    color: #000000;
+    position: relative;
+    left: -30px;
+    background-image: url(/img/box-white-text.png);
+}
+/*Fim-Section-banner*/
+
+/*Responsividade*/
+/*
+@media screen and (max-width:1400px) {
+    .banner{
+        background-size: 90% auto;
+        background-position: 200% 100%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .banner{
+        background-size: cover;
+        background-position: center;
+        height: 70vh;
+        min-height: 500px;
+    }
+}
+
+*/
+@media screen and (max-width:768px) {
+    .desktop{
+        display: none;
+    }
+
+    .banner{
+        height: 70vh;
+        min-height: 0;
+    }
+
+    .text-banner{
+        padding: 30px;
+    }
+    
+    .text-banner-single{
+        font-size: 18px;
+    }
+    
+}
+
+@media screen and (max-width:580px) {
+    .banner{
+        height: 60vh;
+        min-height: 0;
+        max-height: 800px;
+    }
+
+    .text-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .text-banner-single{
+        font-size: 18px;
+    }
+
+    .text-banner .text-banner-single:nth-last-of-type(2){
+        position: relative;
+        left: 0;
+        text-align: center;
+    }
+    
+    .text-banner .text-banner-single:nth-last-of-type(3){
+        position: relative;
+        left: 0;
+        text-align: center;
+    }
+
+    .text-banner .text-banner-single:nth-last-of-type(4){
+        text-align: center;
+    }
+    
+    
+    .text-banner .text-banner-single:nth-last-of-type(1){
+        position: relative;
+        left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .text-banner .text-banner-single:nth-last-of-type(3){
+        width: 230px;
+    }
+
+    .text-banner .text-banner-single:nth-last-of-type(1){
+        width: 250px;
+        font-size: 15px;
+        padding-top: 16px;
+    }
+}
+/*Fim-Responsividade*/
