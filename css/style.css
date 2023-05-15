@@ -746,6 +746,108 @@ footer p{
 }
 
 
+/*veiculo-individual-está dentro da pagina de vendas*/
+.venda-single .container{
+    padding: 40px 0;
+    max-width: 1000px;
+}
+
+.info-veiculo{
+    float: left;
+    width: 60%;
+}
+
+.foto-destaque{
+    width: 100%;
+    padding-top: 60%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.descricao-veiculo{
+    float: left;
+    width: 40%;
+    padding: 20px;
+}
+
+.descricao-veiculo p{
+    margin-top: 25px;
+    max-width: 360px;
+}
+
+.descricao-veiculo a{
+    margin-top: 25px;
+}
+
+.nav-galeria-parent{
+    width: 100%;
+    padding: 0 36px;
+    position: relative;
+}
+
+.arrow-left-nav{
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(/img/arrow-left.png);
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+}
+
+.arrow-right-nav{
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(/img/arrow-right.png);
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+}
+
+.nav-galeria{
+    width: 100%;
+    padding: 15px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.nav-galeria-wraper{
+    width: 200%;
+}
+
+.mini-img{
+    cursor: pointer;
+    float: left;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/img/carro1.jpg);
+    border: 2px solid #fff;
+    padding-top: calc(33.3% * (100 / 200) * 0.5);
+    width: calc(33.3% * (100 / 200));
+}
+
+.info-bread{
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.info-bread a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.info-bread a:last-child{
+    color: #B21E1E;
+}
+
+.info-bread span{
+    padding: 0 30px;
+}
+
 
 /*Responsividade*/
 
@@ -768,6 +870,22 @@ footer p{
     .search2{
         text-align: center;
         display: inline-block;
+    }
+
+    .info-veiculo{
+        width: 100%;
+    }
+
+    .descricao-veiculo{
+        text-align: center;
+    }
+
+    .descricao-veiculo a{
+        display: inline-block;
+    }
+
+    .descricao-veiculo p{
+        max-width: none;
     }
 }
 
