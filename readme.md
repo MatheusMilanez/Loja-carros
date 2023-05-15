@@ -11,5 +11,3 @@
 ### Link do Projeto na Vercel
 <p>https://loja-carros.vercel.app/</p>
 
-<h1 style="color:red;">ATENÇÃO</h1>
-<p>Projeto em desenvolvimento</p>
